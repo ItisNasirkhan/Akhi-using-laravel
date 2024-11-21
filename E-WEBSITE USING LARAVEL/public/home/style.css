@@ -75,7 +75,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 2vw;
+    gap: 1vw;
     padding: 0 3vh;
     position: relative;
     text-align: center;
@@ -91,6 +91,15 @@ body{
 }
 #header-2 h1{
     font-size: 15px;
+}
+#search{
+    width: 20%;
+    font-size: 12px;
+    margin-right: 1px;
+    padding-right: 0;
+}
+#serach-icon{
+    margin: 0;
 }
 #header-2 a:hover{
     color: #088178;
@@ -143,7 +152,9 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 100px
+    padding-top: 100px;
+    padding-left: 15px;
+    padding-right: 15px;
 
 
 }
@@ -792,8 +803,79 @@ footer a:hover{
     padding: 80px;
     border: 1px solid #e1e1e1;
  }
- 
 
+ #pagination{
+    text-align: center;
+    
+ }
+ #pagination a{
+    text-decoration: none;
+    margin: 8px;
+    color: #ffffff;
+    background-color: #088178;
+    padding: 18px;
+    border-radius: 8px;
+    font-size: 16px;
+ }
+ #pagination a:hover{
+    box-shadow: 0.1px 0.1px 20px rgba(0, 0, 0, 0.2);
+ }
+ /* single product detail */
+ #prodetail{
+    display: flex;
+    margin-top: 20px;
+ }
+ #prodetail .single-pro-image{
+    width: 40%;
+    margin-right: 50px;
+ }
+ .small-img-group{
+    display: flex;
+    justify-content: space-between;
+    
+ }
+ .small-img-group img{
+    padding: 7px;
+ }
+ .small-image-column{
+    flex-basis: 24%;
+    cursor: pointer;
+ }
+ #prodetail .single-pro-details{
+    width: 50%;
+    padding-top: 30px;
+ }
+ #prodetail .single-pro-details h4{
+    padding: 40px 0 20px 0;
+ }
+ #prodetail .single-pro-details h2{
+    font-size: 26px;
+ }
+ #prodetail .single-pro-details select{
+    display: block;
+    padding: 5px 10px;
+    margin-top: 10px;
+    font-size: 13px;
+ }
+ #prodetail .single-pro-details input{
+    width: 25%;
+    margin-top: 10px;
+    padding: 5px 10px;
+    font-size: 13px;
+ }
+ #prodetail .single-pro-details button{
+    background-color: #088178;
+    color: #f0f1f5;
+    padding: 5px 10px;
+    font-size: 13px;
+    border: none;
+    margin-left: 20px;
+ }
+ #prodetail .single-pro-details button:hover{
+    color: #000000;
+    background-color:#088178;
+    box-shadow: 0.1px 0.1px 20px rgba(0, 0, 0, 0.2);
+ }
 @media (max-width:799px) {
    
     #hero {
@@ -1069,14 +1151,20 @@ footer a:hover{
        padding-bottom: 15px;
     }
 
-    /* contact */
-   
+    /* shop */
+    #pagination {
+        margin: 30px;
+    }
+    #pagination a {
+        
+        font-size: 10px;
+    }
 
   
 }
 @media (max-width:477px) {
     .section-p1 {
-        padding: 20px;
+        padding: 2px;
     }
     #hero {
         padding: 10px 30px;
@@ -1086,6 +1174,7 @@ footer a:hover{
         height: 100%;
         width: 100%;
         flex-direction: column;
+        padding-left: 20px;
        
     }
     #fe-box1 {
@@ -1201,8 +1290,9 @@ footer a:hover{
        left: 5vh; 
     }
     #product1 .pro-container {
+        
         align-items: center;
-        padding: 50px;
+        padding-left: 64px;
     }
     .row {
         width: 100%;
@@ -1275,7 +1365,24 @@ footer a:hover{
     #form-details .people div p {
         font-size: 8px;
     }
-    
+    #prodetail {
+        display: flex;
+        flex-direction: column;
+    }
+    #prodetail .single-pro-details {
+        width: 100%;
+        padding: 20px;
+        
+    }
+    #prodetail .single-pro-image{
+        width: 100%;
+        padding: 20px;
+     }
+     footer .icon {
+        bottom: 62vh;
+        left: 3vh;
+        position: absolute;
+    }
    
 }
 #shopheader-2 h1.active::after,

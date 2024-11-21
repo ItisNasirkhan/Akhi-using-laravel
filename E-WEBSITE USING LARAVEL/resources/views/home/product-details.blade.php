@@ -10,8 +10,10 @@
 </head>
 <body>
     @include('home.header')
+    @include('home.pro-content')
     @include('home.newsletter')
     @include('home.footer')
+    
 
   
     <script src="{{ asset('home/script.js') }}"></script>

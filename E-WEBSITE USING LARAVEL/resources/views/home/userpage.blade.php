@@ -10,14 +10,9 @@
 </head>
 <body>
     @include('home.header')
-    @include('home.hero')
-    @include('home.features')
-    @include('home.product1')
-    @include('home.banner')
-    @include('home.product2')
-    @include('home.smallbanner')
-    @include('home.lastbanner')
-    @include('home.newsletter')
+     
+       @yield('content')
+    
     @include('home.footer')
 
   

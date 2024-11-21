@@ -10,12 +10,11 @@
 </head>
 <body>
     @include('home.header')
-    @include('home.pageheader')
-    @include('home.product1')
-    @include('home.banner')
-    @include('home.product2')
-    @include('home.newsletter')
+    
+        @yield('content') 
+    
     @include('home.footer')
+    
 
   
     <script src="{{ asset('home/script.js') }}"></script>

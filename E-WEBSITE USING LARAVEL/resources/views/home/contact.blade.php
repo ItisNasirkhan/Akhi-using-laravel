@@ -10,10 +10,9 @@
 </head>
 <body>
     @include('home.header')
-    @include('home.pageheader')
-    @include('home.contacts')
-    @include('home.formdet')
-    @include('home.newsletter')
+
+     @yield('content')
+    
     @include('home.footer')
 
   

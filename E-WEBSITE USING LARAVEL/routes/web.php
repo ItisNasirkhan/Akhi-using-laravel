@@ -7,18 +7,24 @@ route::get('/',[HomeController::class,'index']);
 Route::get('/userpage', function () {
     return view('home.userpage');
 });
+Route::get('/userpage', function () {
+    return view('home.userpage_content');
+});
 Route::get('/shop', function () {
     return view('home.shop');
+});
+Route::get('/shop', function () {
+    return view('home.shop_content');
 });
 Route::get('/contact', function () {
     return view('home.contact');
 });
-
-Route::get('/blog', function () {
-    return view('home.blog');
+Route::get('/contact', function () {
+    return view('home.contact_content');
 });
-Route::get('/about', function () {
-    return view('home.about');
+
+Route::get('/product-details', function () {
+    return view('home.product-details');
 });
 
 
