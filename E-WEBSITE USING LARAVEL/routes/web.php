@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProductController;
 
 route::get('/',[HomeController::class,'index']);
 Route::get('/userpage', function () {
@@ -16,6 +17,21 @@ Route::get('/shop', function () {
 Route::get('/shop', function () {
     return view('home.shop_content');
 });
+
+Route::get('/crud', function () {
+    return view('home.crud');
+});
+Route::get('/products/{id}/edit', [ProductController::class, 'edit'])->name('products.edit');
+
+// Route::get('/crud', function () {
+//     return view('products.create');
+// });
+// Route::get('/crud', function () {
+//     return view('products.edit');
+// });
+// Route::get('/crud', function () {
+//     return view('products.index');
+// });
 Route::get('/contact', function () {
     return view('home.contact');
 });
@@ -26,6 +42,8 @@ Route::get('/contact', function () {
 Route::get('/product-details', function () {
     return view('home.product-details');
 });
+
+Route::resource('products', ProductController::class);
 
 
 
